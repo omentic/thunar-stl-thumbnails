@@ -6,11 +6,11 @@ pkgdesc="Custom STL thumbnails for Tumbler"
 arch=('any')
 url="https://github.com/j-james/thunar-stl-thumbnails"
 license=('BSD')
-depends=('tumbler' 'openscad')
+depends=('tumbler' 'openscad' 'imagemagick')
 source=('stl.thumbnailer'
 		'stl-thumbnailer.sh')
 sha256sums=('fd4a8c44e4a35418e894241a3e6fefcab83279570b5e91296dde1f1179b0a0cc'
-			'0b6a39b7facae2c7d036a0017010a86f6a3ebcb2a572312174d7d4cff1af8325')
+            '998ba171b426278a168c16f480b4eb975c6b91552020199525ac554cb9d2696a')
 
 package() {
 	install -Dvm644 "stl.thumbnailer" "$pkgdir/usr/share/thumbnailers/stl.thumbnailer"
